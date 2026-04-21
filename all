@@ -127,7 +127,7 @@ xx' IN (itemnum,sdesc,ldesc) union select email,passwd,123,123 from userdb LIMIT
 .go back to wirw shark stop the wireshark give filter icmp 
 
 7B)
-go to browser and open wikipdedia image in new tab and copyimage link
+go to browser and open wikipdedia image in new tab and copyimage location
 open terminal
 >> nc -l -p 5000
 go to browser firefox and search -> localhost:5000come back to terminal
@@ -137,7 +137,7 @@ Content-Type: text/html;
 <!doctype html>
 <title>bnm</title>
 <h1>cars</h1>
-<img src="image link" alt="sample" width="300" height="200">
+<img src="url" alt="sample" width="300" height="200">
 
 7C)
 .login as admin
