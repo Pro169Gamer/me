@@ -59,6 +59,7 @@ nc example.com 80
 HEAD / HTTP/1.1
 Host: example.com
 
+
 nc example.com 80
 GET / HTTP/1.1
 Host: example.com
