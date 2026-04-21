@@ -57,11 +57,13 @@ and fetch the card number for the price $46.95
 nc example.com 80
 -->turant niche wala sara 
 HEAD / HTTP/1.1
+
 Host: example.com
 
 
 nc example.com 80
 GET / HTTP/1.1
+
 Host: example.com
 
 3C)
