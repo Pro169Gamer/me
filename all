@@ -132,13 +132,12 @@ open terminal
 >> nc -l -p 5000
 go to browser firefox and search -> localhost:5000come back to terminal
 HTTP/1.1 200 OK
-Content-Type: text/html; charset=UTF-8
-server: nooblinux
+Content-Type: text/html;
 
 <!doctype html>
 <title>bnm</title>
 <h1>cars</h1>
-<img src="image.jpg" alt="sample" width="300" height="200">
+<img src="image link" alt="sample" width="300" height="200">
 
 7C)
 .login as admin
