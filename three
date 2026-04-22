@@ -1,0 +1,31 @@
+a)
+text encrypt & decrypt
+ touch file1.txt
+ gedit file1.txt
+
+cbc-:
+openssl enc -aes-128-cbc -e -in file1.txt -out ciphers.txt -k 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f
+cat ciphers.txt
+openssl enc -aes-128-cbc -d -in ciphers.txt -out outputs.txt -k 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f
+
+cat outputs.txt
+
+ecb:-
+openssl enc -aes-128-ecb -e -in file1.txt -out cipher5.txt -k 00112233445566778899aabbccddeeff
+openssl enc -aes-128-ecb -d -in cipher5.txt -out output1.txt -k 00112233445566778899aabbccddeeff
+cat output1.txt
+xxd ciphers.txt
+xxd ciphers5.txt
+
+b)
+echo -n 12345 > t11.txt
+echo -n 1234567890 > t22.txt
+echo -n 1234567890abcdef > t33.txt
+openssl enc -aes-128-cbc -e -in t11.txt -out outpt11.bin -K 00112233445566778899aabbccddeeff -iv 010203040506070890a0b0c0d0e0f
+openssl enc -aes-128-cbc -d -in outpt11.bin -out outpt12.txt -K 00112233445566778899aabbccddeeff -iv 010203040506070890a0b0c0d0e0f
+openssl enc -aes-128-cbc -d -in outpt11.bin -out outpt12_nopad.txt -nopad -K 00112233445566778899aabbccddeeff -iv 010203040506070890a0b0c0d0e0f
+xxd outpt12.txt
+xxd outpt12_nopad.txt
+
+c)
+1b
