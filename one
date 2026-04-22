@@ -40,4 +40,4 @@ http-http
    on 200 ok text/html (right click -follow->http stream) for 3way Tcp stream
 https-ssl
 tcp-tcp
-icmp-icmp
+icmp-icmp (ping google.com)
