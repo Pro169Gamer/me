@@ -12,7 +12,9 @@
 sudo tcpdump -D
 sudo tcpdump -i enp0s3
 ping google.com
+2nd terminal
 ping 142.250.77.142
+1nd terminal
 sudo tcpdump host 142.250.77.142
 sudo tcpdump -i enp0s3 icmp
 sudo tcpdump port 80
@@ -21,9 +23,11 @@ sudo tcpdump -i enp0s3 -w file.pcap
 sudo tcpdump -r file.pcap
 sudo tcpdump -A -r file.pcap
 sudo tcpdump -xx -r file.pcap
-sudo tcpdump tcp
+
 sudo tcpdump -i enp0s3 tcp
+exampl.com -> brower clear history 
 sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & tcp-syn != 0'
+example.com ->wait for 3-4 mins
 sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & tcp-syn != 0' -w cap.pcap
 sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & tcp-ack != 0' -w file1.pcap
 sudo tcpdump -n -xx -r file1.pcap
