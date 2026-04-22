@@ -1,0 +1,38 @@
+1 A) copy /B image.jpg + label.rar new.jpg 
+    delete war file and all text file
+	BMP-42 4D
+	Gif-47 49 46 38 37 61
+	png-89 50 4E 47 0D 0A 1A 0A
+	Tif- 49 49 2A 00
+	jpg FF d8 FF E0
+	webp 52 49 46 46 first
+	     57 45 42 50 last
+
+1B)  
+sudo tcpdump -D
+sudo tcpdump -i enp0s3
+ping google.com
+ping 142.250.77.142
+sudo tcpdump host 142.250.77.142
+sudo tcpdump -i enp0s3 icmp
+sudo tcpdump port 80
+http://example.com
+sudo tcpdump -i enp0s3 -w file.pcap
+sudo tcpdump -r file.pcap
+sudo tcpdump -A -r file.pcap
+sudo tcpdump -xx -r file.pcap
+sudo tcpdump tcp
+sudo tcpdump -i enp0s3 tcp
+sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & tcp-syn != 0'
+sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & tcp-syn != 0' -w cap.pcap
+sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & tcp-ack != 0' -w file1.pcap
+sudo tcpdump -n -xx -r file1.pcap
+sudo tcpdump -n -i enp0s3 'tcp[tcpflags] & (tcp-syn|tcp-ack) != 0' -w file2.pcap
+sudo tcpdump -n -xx -r file2.pcap
+sudo tcpdump -i enp0s3 -nn -p -e host example.com and port 443 and 'tcp[tcpflags] & (tcp-syn|tcp-ack) != 0'
+
+1C) 
+http-http
+   https-ssl
+   tcp-tcp
+   icmp-icmp
